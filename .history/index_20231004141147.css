@@ -36,15 +36,7 @@ input {
 border: 1px solid #F3D1BF;
 background: #FFF;
 }
-.container .subscribe form input::placeholder{
-  color: var(--Text_Dark_Gray, rgba(57, 20, 0, 0.64));
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Epilogue;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; 
-}
+
 .container .subscribe button {
   width: 170px;
   height: 48px;
@@ -68,22 +60,20 @@ button{
 }
 
 .container-1 .map {
-  display: flex;
-  align-items: center;
-  padding: 127px 135px;
+  position: relative;
   background-image: url("./img/Bitmap\ \(4\).png");
   min-height: 100vh;
   width: 100%;
   background-size: 100% 100%;
+  justify-content: center;
   background-repeat: no-repeat;
-
 }
 
 .container-1 .map form {
-  /* position: absolute; */
+  position: absolute;
 
-  /* left: 135px;
-  bottom: 50px; */
+  left: 135px;
+  bottom: 50px;
   padding: 57px 48px 48px 48px;
   border-radius: 6px;
   background: #fff;
@@ -147,10 +137,11 @@ button{
   height: 40px;
 }
 
-.container-1 .map .pin  {
-
+.container-1 .map .pin img {
+  bottom: 323px;
+  left: 934px;
+  top: 324px;
+  position: absolute;
   width: 72px;
   height: 72px;
-margin-left: 329px;
-
 }
